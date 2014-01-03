@@ -1,0 +1,78 @@
+/** 
+ * @file  locality.h
+ *
+ * @brief Declaration of helper functions involving locale
+ */
+// RCS ID line follows -- this is updated by CVS
+// $Id$
+
+#ifndef locality_h_included
+#define locality_h_included
+
+namespace locality
+{
+	template<size_t n>
+	class string
+	{
+	public:
+		LPTSTR c_str() { return out; }
+		operator String() { return out; }
+		String::size_type length()
+		{
+			return static_cast<String::size_type>(_tcslen(out));
+		}
+	protected:
+		TCHAR out[n];
+	};
+	class NumToLocaleStr : public string<48>
+	{
+	public:
+		NumToLocaleStr(INT n, INT r)
+		{
+			_ltot(n, out, r);
+		}
+		NumToLocaleStr(INT n)
+		{
+			TCHAR numbuff[24];
+			getLocaleStr(_ltot(n, numbuff, 10));
+		}
+		NumToLocaleStr(INT64 n, INT r)
+		{
+			_i64tot(n, out, r);
+		}
+		NumToLocaleStr(INT64 n)
+		{
+			TCHAR numbuff[24];
+			getLocaleStr(_i64tot(n, numbuff, 10));
+		}
+		NumToLocaleStr(UINT n, INT r)
+		{
+			_ultot(n, out, r);
+		}
+		NumToLocaleStr(UINT n)
+		{
+			TCHAR numbuff[24];
+			getLocaleStr(_ultot(n, numbuff, 10));
+		}
+		NumToLocaleStr(UINT64 n, INT r)
+		{
+			_ui64tot(n, out, r);
+		}
+		NumToLocaleStr(UINT64 n)
+		{
+			TCHAR numbuff[24];
+			getLocaleStr(_ui64tot(n, numbuff, 10));
+		}
+	private:
+		void getLocaleStr(LPCTSTR);
+	};
+	class TimeString : public string<128>
+	{
+	public:
+		TimeString(const SYSTEMTIME &);
+	};
+};
+
+typedef locality::NumToLocaleStr NumToStr;
+
+#endif // locality_h_included

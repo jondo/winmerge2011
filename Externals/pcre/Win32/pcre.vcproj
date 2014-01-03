@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<VisualStudioProject Name="pcre"
+                     ProjectGUID="{F7E6A782-1C15-46E3-B645-922494B9F146}"
+                     ProjectType="Visual C++"
+                     Version="9,00">
+  <Platforms>
+    <Platform Name="Win32" />
+    <Platform Name="x64" />
+  </Platforms>
+  <Configurations>
+    <Configuration Name="Debug|Win32"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            BasicRuntimeChecks="3"
+            DebugInformationFormat="3"
+            EnableIntrinsicFunctions="true"
+            ErrorReporting="0"
+            ExceptionHandling="0"
+            InlineFunctionExpansion="0"
+            Optimization="0"
+            PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Debug\&quot;,PCRE_STATIC"
+            RuntimeLibrary="1"
+            RuntimeTypeInfo="false"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Debug\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+    <Configuration Name="Debug|x64"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            BasicRuntimeChecks="3"
+            DebugInformationFormat="3"
+            EnableIntrinsicFunctions="true"
+            ErrorReporting="0"
+            ExceptionHandling="0"
+            InlineFunctionExpansion="0"
+            Optimization="0"
+            PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Debug\&quot;,PCRE_STATIC"
+            RuntimeLibrary="1"
+            RuntimeTypeInfo="false"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,_DEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Debug\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+    <Configuration Name="Release|Win32"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            EnableFunctionLevelLinking="true"
+            EnableIntrinsicFunctions="true"
+            ErrorReporting="0"
+            ExceptionHandling="0"
+            Optimization="1"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,PCRE_STATIC"
+            RuntimeLibrary="0"
+            RuntimeTypeInfo="false"
+            StringPooling="true"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+    <Configuration Name="Release|x64"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            EnableFunctionLevelLinking="true"
+            EnableIntrinsicFunctions="true"
+            ErrorReporting="0"
+            ExceptionHandling="0"
+            Optimization="1"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,PCRE_STATIC"
+            RuntimeLibrary="0"
+            RuntimeTypeInfo="false"
+            StringPooling="true"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+    <Configuration Name="System32|Win32"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            BufferSecurityCheck="false"
+            EnableFunctionLevelLinking="true"
+            EnableIntrinsicFunctions="true"
+            ExceptionHandling="0"
+            Optimization="1"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,PCRE_STATIC"
+            RuntimeLibrary="2"
+            RuntimeTypeInfo="false"
+            StringPooling="true"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+    <Configuration Name="System32|x64"
+                   CharacterSet="2"
+                   ConfigurationType="4"
+                   IntermediateDirectory="$(SolutionDir)BuildTmp\$(ProjectName)\$(PlatformName)\$(ConfigurationName)"
+                   OutputDirectory="$(IntDir)">
+      <Tool Name="VCCLCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            AdditionalOptions=" /Zm1000"
+            BufferSecurityCheck="false"
+            EnableFunctionLevelLinking="true"
+            EnableIntrinsicFunctions="true"
+            ExceptionHandling="0"
+            Optimization="1"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,PCRE_STATIC"
+            RuntimeLibrary="2"
+            RuntimeTypeInfo="false"
+            StringPooling="true"
+            UseUnicodeResponseFiles="false"
+            WarningLevel="3" />
+      <Tool Name="VCResourceCompilerTool"
+            AdditionalIncludeDirectories=".;..;"
+            PreprocessorDefinitions="WIN32,_WINDOWS,NDEBUG,HAVE_CONFIG_H,_CRT_SECURE_NO_DEPRECATE,CMAKE_INTDIR=\&quot;Release\&quot;,pcre_EXPORTS" />
+      <Tool Name="VCLibrarianTool"
+            UseUnicodeResponseFiles="false" />
+    </Configuration>
+  </Configurations>
+  <Files>
+    <Filter Name="Source Files">
+      <File RelativePath=".\pcre_chartables.c" />
+      <File RelativePath="..\pcre_compile.c" />
+      <File RelativePath="..\pcre_config.c" />
+      <File RelativePath="..\pcre_dfa_exec.c" />
+      <File RelativePath="..\pcre_exec.c" />
+      <File RelativePath="..\pcre_fullinfo.c" />
+      <File RelativePath="..\pcre_get.c" />
+      <File RelativePath="..\pcre_globals.c" />
+      <File RelativePath="..\pcre_info.c" />
+      <File RelativePath="..\pcre_maketables.c" />
+      <File RelativePath="..\pcre_newline.c" />
+      <File RelativePath="..\pcre_ord2utf8.c" />
+      <File RelativePath="..\pcre_refcount.c" />
+      <File RelativePath="..\pcre_study.c" />
+      <File RelativePath="..\pcre_tables.c" />
+      <File RelativePath="..\pcre_try_flipped.c" />
+      <File RelativePath="..\pcre_ucd.c" />
+      <File RelativePath="..\pcre_valid_utf8.c" />
+      <File RelativePath="..\pcre_version.c" />
+      <File RelativePath="..\pcre_xclass.c" />
+    </Filter>
+    <Filter Name="Header Files">
+      <File RelativePath=".\config.h" />
+      <File RelativePath=".\pcre.h" />
+    </Filter>
+    <File RelativePath="..\CMakeLists.txt" />
+  </Files>
+</VisualStudioProject>
